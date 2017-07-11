@@ -19,9 +19,9 @@
   "main": "./dist/main.js",
   "typings": "./dist/src/main",
   "author": "dylanvorster",
- "scripts": {
-		"lint": "tslint -c node_modules/tslint-microsoft-contrib src/**/*.ts",
-  "prepare": "export NODE_ENV=production && webpack && ./node_modules/node-sass/bin/node-sass --output-style compressed ./src/sass.scss > ./dist/style.css"
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "prepare": "export NODE_ENV=production && webpack && ./node_modules/node-sass/bin/node-sass --output-style compressed ./src/sass.scss > ./dist/style.css"
   },
   "dependencies": {
     "closest": "^0.0.1",
@@ -40,7 +40,7 @@
     "style-loader": "^0.13.1",
     "ts-loader": "^2.0.0",
     "tslint": "^5.5.0",
-    "tslint-microsoft-contrib": "^5.0.1",
+    "tslint-config-airbnb": "^5.2.1",
     "typescript": "^2.1.6",
     "webpack": "^2.2.1"
   }
