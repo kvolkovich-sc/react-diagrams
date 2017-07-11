@@ -7,15 +7,15 @@ import {DiagramEngine} from "../DiagramEngine";
  * @author Dylan Vorster
  */
 export class DefaultNodeFactory extends NodeWidgetFactory{
-	
-	constructor(){
-		super("default");
-	}
-	
-	generateReactWidget(diagramEngine:DiagramEngine,node: DefaultNodeModel): JSX.Element{
-		return React.createElement(DefaultNodeWidget,{
-			node: node,
-			diagramEngine: diagramEngine
-		});
-	}
+
+    constructor(){
+        super("default");
+    }
+
+    generateReactWidget(diagramEngine:DiagramEngine,node: DefaultNodeModel): JSX.Element{
+        return React.createElement(DefaultNodeWidget,{
+            node: node,
+            diagramEngine: diagramEngine
+        });
+    }
 }

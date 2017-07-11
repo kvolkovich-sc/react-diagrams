@@ -1,3 +1,3 @@
 interface Function{
-	name: string
+    name: string
 }

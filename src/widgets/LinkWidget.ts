@@ -3,9 +3,9 @@ import {LinkModel} from "../Common";
 import {DiagramEngine} from "../DiagramEngine";
 
 export interface LinkProps {
-	link: LinkModel;
-	diagramEngine: DiagramEngine;
-	children?: any;
+    link: LinkModel;
+    diagramEngine: DiagramEngine;
+    children?: any;
 }
 
 export interface LinkState {
@@ -16,17 +16,17 @@ export interface LinkState {
  */
 export class LinkWidget extends React.Component<LinkProps, LinkState> {
 
-	constructor(props: LinkProps) {
-		super(props);
-		this.state = {
-		}
-	}
-	
-	shouldComponentUpdate(){
-		return this.props.diagramEngine.canEntityRepaint(this.props.link);
-	}
+    constructor(props: LinkProps) {
+        super(props);
+        this.state = {
+        }
+    }
 
-	render() {
-		return this.props.children;
-	}
+    shouldComponentUpdate(){
+        return this.props.diagramEngine.canEntityRepaint(this.props.link);
+    }
+
+    render() {
+        return this.props.children;
+    }
 }

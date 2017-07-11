@@ -5,12 +5,12 @@ import {AbstractInstanceFactory} from "./AbstractInstanceFactory";
  * @author Dylan Vorster
  */
 export class LinkInstanceFactory extends AbstractInstanceFactory<LinkModel>{
-	
-	constructor(){
-		super("LinkModel");
-	}
-	
-	getInstance(){
-		return new LinkModel();
-	}
+
+    constructor(){
+        super("LinkModel");
+    }
+
+    getInstance(){
+        return new LinkModel();
+    }
 }
